@@ -5,3 +5,4 @@ plotly
 yfinance
 prophet
 matplotlib
+xhtml2pdf
