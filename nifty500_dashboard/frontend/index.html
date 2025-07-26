@@ -1,0 +1,25 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nifty 500 Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Nifty 500 Stock Prediction</h1>
+  <input type="text" id="symbol" placeholder="Enter Stock Symbol">
+  <button onclick="predict()">Predict</button>
+  <div id="result"></div>
+
+  <script>
+    function predict() {
+      const symbol = document.getElementById('symbol').value;
+      fetch(`http://localhost:5000/predict?symbol=${symbol}`)
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('result').innerHTML = `<img src="data:image/png;base64,${data.plot}" />`;
+        });
+    }
+  </script>
+</body>
+</html>

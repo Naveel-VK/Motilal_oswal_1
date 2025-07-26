@@ -1,0 +1,95 @@
+/* Global App Container */
+.app-container {
+    background-color: #e9ecef;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    padding-bottom: 40px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px 0;
+    margin-bottom: 30px;
+    color: white;
+    text-align: center;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* Container for dropdown to center */
+.container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.dropdown-container {
+    margin-bottom: 40px;
+}
+
+/* Section Titles */
+.section-title {
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Styled Cards (used inline styles too) */
+/* You can add more hover or shadow effects here if needed */
+
+/* Table Styling */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.styled-table th, 
+.styled-table td {
+    border: 1px solid #ddd;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.styled-table th {
+    background-color: #34495e;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f3f6f8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #888;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    margin-top: 60px;
+}
+
+/* Loading Spinner margin */
+.graph-loading {
+    min-height: 460px; /* reserve space so spinner doesn't jump */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .dropdown-container dcc-dropdown {
+        width: 100% !important;
+    }
+}
